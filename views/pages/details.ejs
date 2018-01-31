@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%include ../partials/header %>
+</head>
+<body>
+  <ul class="quotes">
+<% for(var i=0; i<registrations.length; i++) {%>
+  <li class="quote">
+    <span><%= registrations[i].name %></span>
+    <span><%= registrations[i].collegename %></span>
+    <span><%= registrations[i].phoneno %></span>
+    <span><%= registrations[i].yr %></span>
+
+  </li>
+<% } %>
+</ul>
+</body>
+</html>
